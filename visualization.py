@@ -61,4 +61,4 @@ if __name__ == '__main__':
 
 	files = sorted(glob.glob('./images/*.png'))
 	images = list(map(lambda file: Image.open(file), files))
-	images[0].save('us_covid-19_visualization_cases.gif', save_all=True, append_images=images[1:], duration=20, loop=0)
+	images[0].save('us_covid-19_visualization_cases.gif', save_all=True, append_images=images[1:], duration=120, loop=0)
